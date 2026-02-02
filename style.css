@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+    background-color: #0d1117;
+    color: #e6edf3;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+header {
+    background-color: #010409;
+    padding: 16px 32px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-menu li a {
+    color: #e6edf3;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.nav-menu li a:hover {
+    background-color: #21262d;
+}
+
+.nav-menu li a.active {
+    font-weight: 600;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.search-btn {
+    background-color: #21262d;
+    border: 1px solid #30363d;
+    color: #7d8590;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.sign-in {
+    color: #e6edf3;
+    font-size: 14px;
+}
+
+.sign-up {
+    background-color: #238636;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.sign-up:hover {
+    background-color: #2ea043;
+}
+
+
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 80px 0 60px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    background: linear-gradient(90deg, #79c0ff, #d2a8ff, #ff7b72);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #7d8590;
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #238636;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #2ea043;
+}
+
+/* Pricing Cards */
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 32px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card.recommended {
+    border-color: #238636;
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #238636;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.card h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.card-desc {
+    color: #7d8590;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.starting {
+    color: #7d8590;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.price {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.currency {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+.amount {
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.period {
+    font-size: 14px;
+    color: #7d8590;
+    margin-left: 8px;
+    margin-top: 16px;
+}
+
+.btn-secondary {
+    display: block;
+    text-align: center;
+    background-color: #21262d;
+    border: 1px solid #30363d;
+    color: #e6edf3;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.btn-secondary:hover {
+    background-color: #30363d;
+}
+
+.btn-outline {
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #30363d;
+    color: #e6edf3;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn-outline:hover {
+    background-color: #21262d;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.btn-group .btn-primary {
+    text-align: center;
+}
+
+.includes {
+    color: #7d8590;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.features {
+    flex: 1;
+}
+
+.features li {
+    font-size: 14px;
+    padding: 8px 0;
+    border-bottom: 1px solid #21262d;
+}
+
+.features li .note {
+    display: block;
+    color: #7d8590;
+    font-size: 12px;
+}
+
+.addon-title {
+    color: #7d8590;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.addons li {
+    font-size: 14px;
+    padding: 8px 0;
+    color: #58a6ff;
+}
+
+/* Additional Add-ons Section */
+.additional-addons {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.additional-addons h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.addons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.addon-card {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 24px;
+}
